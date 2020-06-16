@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * selection_sort_list - Function that sorts  an array of integers
+ * selection_sort - Function that sorts  an array of integers
  * in ascending order using the selection sort algorithm.
  *
  * @array: pointer to the head of the array to be sorted.
@@ -28,8 +28,11 @@ void selection_sort(int *array, size_t size)
 				idx_min = iter;
 			}
 		}
-		array[idx_min] = array[idx];
-		array[idx] = min;
-		print_array(array, size);
+		if (min < array[idx])
+		{
+			array[idx_min] = array[idx];
+			array[idx] = min;
+			print_array(array, size);
+		}
 	}
 }
