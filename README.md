@@ -44,7 +44,7 @@ For more information about Big O please visit this awesome webpage [Big O Cheat 
 | [2. Selection sort ](./2-selection_sort.c) | Function that sorts an array of integers in ascending order using the Selection sort algorithm. |
 | [3. Quick sort](./3-quick_sort.c) | Function that sorts an array of integers in ascending order using the Quick sort algorithm. |
 | [4. Shell sort - Knuth Sequence](./100-shell_sort.c) | Function that sorts an array of integers in ascending order using the Shell sort algorithm, using the Knuth sequence. |
-| [main files](./) | All the main program files are includes in order to properly test the sorting algorithms. |
+| [main files](./) | All the main program files are included in order to properly test the sorting algorithms. |
 
 ## Usage Examples
 
