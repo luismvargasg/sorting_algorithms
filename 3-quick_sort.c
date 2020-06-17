@@ -3,10 +3,10 @@
 /**
  * quick_sort - Function that sorts an array of integers in ascending order
  * using the Quick sort algorithm.
- * 
+ *
  * @array: pointer to the head of the array to be sorted.
  * @size: size of the array.
- * 
+ *
  * Return: Nothing
  */
 
@@ -18,7 +18,14 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * 
+ * quick_sort_rec - Recursive function to sort the list.
+ *
+ * @array: Pointer to the array.
+ * @lo: Starting index.
+ * @hi: Ending index.
+ * @size: Size of the array
+ *
+ * Return: Nothing.
  */
 
 void quick_sort_rec(int *array, int lo, int hi, size_t size)
@@ -34,7 +41,16 @@ void quick_sort_rec(int *array, int lo, int hi, size_t size)
 }
 
 /**
- * 
+ * partition - This function takes last element as pivot and
+ * places and places all smaller elements than pivot to the
+ * left, and all greater elements to the right.
+ *
+ * @array: Pointer to the array.
+ * @lo: Starting index.
+ * @hi: Ending index.
+ * @size: Size of the array
+ *
+ * Return: The next position of the index in the array.
  */
 
 int partition(int *array, int lo, int hi, size_t size)
@@ -56,13 +72,18 @@ int partition(int *array, int lo, int hi, size_t size)
 }
 
 /**
- * 
+ * swap - Function to swap to elements of the array.
+ *
+ * @a: Pointer to the first element to be swapped.
+ * @b: Pointer to the second element to be swapped.
+ *
+ * Return: Nothing.
  */
 
 void swap(int *a, int *b)
-{ 
+{
 	int t = *a;
 
-	*a = *b; 
-	*b = t; 
+	*a = *b;
+	*b = t;
 }
