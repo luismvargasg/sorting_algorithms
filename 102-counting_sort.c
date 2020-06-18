@@ -73,4 +73,7 @@ void counting_sort(int *array, size_t size)
 	}
 	for (i = 0; i < (int)size; i++)
 		array[i] = sorted_array[i];
+	free(counting_array);
+	free(sum_array);
+	free(sorted_array);
 }
