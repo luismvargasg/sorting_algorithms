@@ -34,4 +34,7 @@ void quick_sort_rec(int *array, int lo, int hi, size_t size);
 int partition(int *array, int lo, int hi, size_t size);
 void swap(int *a, int *b);
 void counting_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
+void swap_nodes(listint_t *node_1, listint_t *node_2, listint_t **list);
+
 #endif /* _SORT_H_ */
